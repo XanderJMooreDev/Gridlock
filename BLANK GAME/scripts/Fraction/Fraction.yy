@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Fraction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Fraction",
+  "parent":{
+    "name":"Structs",
+    "path":"folders/Structs.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
