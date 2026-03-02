@@ -89,7 +89,8 @@ display_matrix = function() {
 check_win = function() {
 	if check_for_rref() {
 		kill_inputs();
-	
+		
+		fireworks = 0;
 		alarm[0] = 1;
 	
 		if room == room_game {
@@ -110,6 +111,12 @@ check_for_rref = function() {
 			
 			if matrix[i][j].num == matrix[i][j].den {
 				if j > lastColWithOne {
+					for (k = 0; k < h; k++) {
+						if matrix[k][i] != 0 && k != j {
+							return false;
+						}
+					}
+					
 					lastColWithOne = j;
 					break;
 				}
@@ -119,6 +126,9 @@ check_for_rref = function() {
 			}
 			else if matrix[i][j].num != 0 {
 				return false;
+			}
+			else if j == w - 1 {
+				lastColWithOne = w;
 			}
 		}
 	}

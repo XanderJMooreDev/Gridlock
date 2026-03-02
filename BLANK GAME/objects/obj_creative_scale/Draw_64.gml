@@ -5,4 +5,6 @@ draw_set_font(consolas);
 
 draw_set_colour(c_black);
 
-draw_text_ext_transformed(x, y - 14, string_concat(i + 1, "x", j + 1), 0, 50, 1.2, 1.2, 0);
+if i > 0 && j > 0 {
+	draw_text_ext_transformed(x, y - 14, string_concat(i + 1, "x", j + 1), 0, 50, 1.2, 1.2, 0);
+}

@@ -5,5 +5,9 @@ else {
 	image_alpha = .5;
 }
 
+if i < 1 || j < 1 {
+	image_blend = c_ltgrey;
+}
+
 x = j * 64 + 32 + room_width / 2 - (64 * 5) / 2;
 y = i * 64 + 36;

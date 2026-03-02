@@ -9,7 +9,7 @@ if room == room_creative_mode_editor {
 		
 	save_string = string_concat(save_string, "a");
 
-	clipboard_set_text(save_string);
+	get_string_async("Copy this code to share your puzzle: ", save_string);
 	
 	show_debug_message(save_string);
 }
