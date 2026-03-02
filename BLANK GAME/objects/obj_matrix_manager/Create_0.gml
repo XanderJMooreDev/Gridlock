@@ -112,7 +112,7 @@ check_for_rref = function() {
 			if matrix[i][j].num == matrix[i][j].den {
 				if j > lastColWithOne {
 					for (k = 0; k < h; k++) {
-						if matrix[k][i] != 0 && k != j {
+						if matrix[k][j].num != 0 && k != i {
 							return false;
 						}
 					}
