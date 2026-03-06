@@ -17,7 +17,7 @@ else if room == room_creative_game {
 	//draw_text_ext(room_width - 4, room_height - 279, string_concat("Code: ", room_code), 16, 400);
 	draw_text_ext(room_width - 4, room_height - 264, string_concat("Row Additions: ", additions), 0, 400);
 }
-else {
+else if room != room_tutorial {
 	draw_set_color(c_white);
 	
 	draw_text_ext(room_width - 4, room_height - 305, string_concat("Puzzles completed: ", puzzles), 0, 400);
